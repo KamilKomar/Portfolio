@@ -1,0 +1,52 @@
+@media (min-width: 768px) {
+    .nav {
+        display: block;
+        width: 100%;
+        height: 12vh;
+        background-color: transparent;
+        font-size: 20px;
+        z-index: 15;
+        transform: translate(0%);
+
+        &__mobile-btn {
+            display: none;
+        }
+
+        &__menu {
+            flex-direction: row;
+            transition: .3s;
+            &-item:hover {
+                color: $mainOrange;
+            }
+        }
+
+        &__media {
+            position: absolute;
+            left: 30px;
+            bottom: 20px;
+            z-index: 1;
+            display: inline-block;
+
+            li {
+                padding: 15px 0;
+                list-style: none;
+            }
+
+            &-item {
+                color: $white;
+                font-size: 30px;
+
+            }
+        }
+
+    }
+    .header {
+        &__text {
+            &-two {
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+

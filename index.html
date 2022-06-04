@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,64 @@
     <title>Kamil Komar Portfolio</title>
     <script src="https://kit.fontawesome.com/3f3ca5611b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/fontawesome/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/dist/css/style.min.css">
 </head>
+
 <body>
     <header class="header">
-        <nav class="nav wrapper">
-            <ul class="nav__menu">
-                <li class="nav__menu-item">About</li>
-                <li class="nav__menu-item">Projects</li>
-                <li class="nav__menu-item">Technologies</li>
-                <li class="nav__menu-item">Contact</li>
-            </ul>
-            <ul class="nav__media">
-                <li class="nav__media-item"><i class="fa-brands fa-github"></i></li>
-                <li class="nav__media-item"><i class="fa-brands fa-instagram"></i></li>
-                <li class="nav__media-item"><i class="fa-brands fa-facebook"></i></li>
-            </ul>
+        <nav class="nav">
+            <div class="wrapper">
+                <ul class="nav__menu">
+                    <li><a href="#" class="nav__menu-item">About</a></li>
+                    <li><a href="#" class="nav__menu-item">Projects</a></li>
+                    <li><a href="#" class="nav__menu-item">Technologies</a></li>
+                    <li><a href="#" class="nav__menu-item">Contact</a></li>
+                </ul>
+                <button class="nav__mobile-close nav__mobile-btn "><i class="fa-solid fa-xmark"></i></button>
+
+            </div>
 
         </nav>
+        <button class="nav__mobile-menu nav__mobile-btn"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav__media">
+            <li><a href="#" class="nav__media-item"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#" class="nav__media-item"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#" class="nav__media-item"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+        <img src="./src/img/Desktop/bg.png" class="bg" alt="">
+        <img src="./src/img/Desktop/mountain1.png" class="mountain1" alt="">
+        <img src="./src/img/Desktop/mountain2.png" class="mountain2" alt="">
+
+        <div class="header__text">
+            <p class="header__text-one">Hello</p>
+            <h1 class="header__text-two">I'm Kamil</h1>
+            <p class="header__text-three">Young Frontend Developer</p>
+        </div>
     </header>
+    <section class="welcome">
+        <h2 class="welcome__word">welcome</h2>
+        <p class="welcome__text">Thank you very much for visiting my website. I hope that my profile will interest you.
+        </p>
+    </section>
+    
+
+    <div class="space"></div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+    <script src="./src/js/script.js"></script>
+
 
 </body>
+
 </html>
