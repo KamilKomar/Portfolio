@@ -15,6 +15,7 @@
         &__menu {
             flex-direction: row;
             transition: .3s;
+
             &-item:hover {
                 color: $mainOrange;
             }
@@ -40,6 +41,7 @@
         }
 
     }
+
     .header {
         &__text {
             &-two {
@@ -47,6 +49,32 @@
             }
         }
     }
+
+    .about {
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        &__text {
+            height: 100%;
+            padding: 40px 40px 0 40px;
+        }
+
+        &__img {
+            top: -30px;
+            left: 40px;
+            width: 300px;
+
+            &-box {
+                left: 40px;
+                height: 400px;
+                &::after {
+                    width: 180px;
+                }
+            }
+        }
+    }
 }
-
-
