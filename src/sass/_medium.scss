@@ -2,7 +2,7 @@
     .nav {
         display: block;
         width: 100%;
-        height: 12vh;
+        height: 8vh;
         background-color: transparent;
         font-size: 20px;
         z-index: 15;
@@ -22,24 +22,14 @@
         }
 
         &__media {
-            position: absolute;
-            left: 30px;
-            bottom: 20px;
-            z-index: 1;
-            display: inline-block;
-
             li {
                 padding: 15px 0;
-                list-style: none;
             }
 
             &-item {
-                color: $white;
                 font-size: 30px;
-
             }
         }
-
     }
 
     .header {
@@ -109,6 +99,35 @@
 
     .project {
         margin: 0;
+    }
+
+    .contact {
+        &__content {
+            width: 100%;
+            // display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            gap: 50px;
+        }
+
+        &__info {
+            flex-direction: column;
+            justify-content: space-evenly;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        &__form {
+            grid-column: 2/4;
+            grid-row: 1/2;
+            padding: 70px 0;
+        }
+
+        &__media {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
     }
 
 }
