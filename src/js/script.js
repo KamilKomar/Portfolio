@@ -33,11 +33,6 @@ navMobileMenuBtn.addEventListener("click", () => {
 navMobileCloseBtn.addEventListener("click", () => {
     nav.style.display = "none";
 });
-// navMenuLink.forEach((link) => {
-//     link.addEventListener("click", () => {
-//         nav.style.display = "none";
-//     });
-// });
 
 //ACCORDION
 
