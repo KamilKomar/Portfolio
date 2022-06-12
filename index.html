@@ -24,9 +24,9 @@
             <div class="wrapper">
                 <ul class="nav__menu">
                     <li><a href="#about" class="nav__menu-item">About</a></li>
-                    <li><a href="#" class="nav__menu-item">Projects</a></li>
-                    <li><a href="#" class="nav__menu-item">Technologies</a></li>
-                    <li><a href="#" class="nav__menu-item">Contact</a></li>
+                    <li><a href="#projects" class="nav__menu-item">Projects</a></li>
+                    <li><a href="#technologies" class="nav__menu-item">Technologies</a></li>
+                    <li><a href="#contact" class="nav__menu-item">Contact</a></li>
                 </ul>
                 <button class="nav__mobile-close nav__mobile-btn "><i class="fa-solid fa-xmark"></i></button>
 
@@ -35,9 +35,12 @@
         </nav>
         <button class="nav__mobile-menu nav__mobile-btn"><i class="fa-solid fa-bars"></i></button>
         <ul class="nav__media">
-            <li><a href="#" class="nav__media-item"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="#" class="nav__media-item"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#" class="nav__media-item"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://github.com/KamilKomar" class="nav__media-item" target="_blank"><i
+                        class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/_kamill_04/" class="nav__media-item" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/kamil.komar.9" class="nav__media-item" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a></li>
         </ul>
         <img src="./src/img/Desktop/bg.png" class="bg" alt="">
         <img src="./src/img/Desktop/mountain1.png" class="mountain1" alt="">
@@ -58,6 +61,7 @@
         </section>
 
         <section class="about" id="about">
+
             <h2 class="section__title about__title">About Me</h2>
             <div class="about__content wrapper">
                 <div class="about__img-box">
@@ -75,23 +79,24 @@
                         I’ve started to interesting in Frontend Developing.</p>
                     <p class="about__desc2">I have never been on IT studies and I’m an self-taught person. </p>
                     <div class="about__button-box">
-                        <button class="about__btn about__btn1">let's talk</button>
-                        <button class="about__btn about__btn2">download cv</button>
+                        <a href="#contact" class="about__btn about__btn1">let's talk</a>
+                        <button class="about__btn about__btn2"><a href="./Kamil Komar CV.pdf" download="Kamil Komar CV"
+                                target="_blank">download cv</a></button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2 class="section__title projects__title">Projects</h2>
-            <div class="projects__content">
-                <a href="https://github.com/KamilKomar/Med-clinic-site" class="projects__proj1 project">
+            <div class="projects__content wrapper">
+                <a href="https://github.com/KamilKomar/Med-clinic-site" class="projects__proj1 project" target="_blank">
                     <div class="projects__info project__text1">
                         <p class="projects__icon"><i class="fa-regular fa-window-maximize"></i></p>
                         <h3 class="projects__proj-title">Med clinic site</h3>
                         <p class="projects__desc">Landing page of medical clinic to practise skills</p>
                     </div>
                 </a>
-                <a href="https://github.com/KamilKomar/GitHub-Profiles" class="projects__proj2 project">
+                <a href="https://github.com/KamilKomar/GitHub-Profiles" class="projects__proj2 project" target="_blank">
                     <div class="projects__info project__text2">
                         <p class="projects__icon"><i class="fa-solid fa-mobile-screen-button"></i></p>
                         <h3 class="projects__proj-title">Github Profiles</h3>
@@ -101,7 +106,7 @@
                         </p>
                     </div>
                 </a>
-                <a href="" class="projects__proj3 project">
+                <a href="https://github.com/KamilKomar/Law-firm" class="projects__proj3 project" target="_blank">
                     <div class="projects__info project__text3">
                         <p class="projects__icon"><i class="fa-regular fa-window-maximize"></i></p>
                         <h3 class="projects__proj-title">Law firm site</h3>
@@ -110,7 +115,7 @@
                         </p>
                     </div>
                 </a>
-                <a href="https://github.com/KamilKomar/WeatherApp" class="projects__proj4 project">
+                <a href="https://github.com/KamilKomar/WeatherApp" class="projects__proj4 project" target="_blank">
                     <div class="projects__info project__text4">
                         <p class="projects__icon"><i class="fa-solid fa-mobile-screen-button"></i></p>
                         <h3 class="projects__proj-title">WeatherApp</h3>
@@ -121,52 +126,143 @@
             </div>
 
         </section>
-        <section class="technologies">
+        <section class="technologies" id="technologies">
             <h2 class="section__title technologies__title">Technologies</h2>
-            <div class="technologies__content">
+            <div class="technologies__content wrapper">
 
-                <div class="technologies__tech">
-                    <i class="fab fa-html5"></i>
-                    <p class="technologies__tech-title">HTML5</p>
-                    <i class="fas fa-angle-down"></i>
+                <div class="technologies__tech technologies__tech--html">
+                    <div class="technologies__name">
+                        <p class="technologies__icon--html technologies__icon"><i class="fab fa-html5"></i></p>
+                        <p class="technologies__tech-title">HTML5</p>
+                        <button class="technologies__arrow"><i class="fas fa-angle-down"></i></button>
 
-                </div>
-                <div class="technologies__tech">
-                    <i class="fab fa-css3-alt"></i>
-                    <p class="technologies__tech-title">CSS3</p>
-                    <i class="fas fa-angle-down"></i>
-
-                </div>
-                <div class="technologies__tech">
-                    <i class="fab fa-bootstrap"></i>
-                    <p class="technologies__tech-title">Bootstrap</p>
-                    <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="technologies__desc">
+                        <p class="technologies__details">Intermediate knowledge, SEO Basics. </p>
+                    </div>
 
                 </div>
-                <div class="technologies__tech">
-                    <i class="fab fa-js-square"></i>
-                    <p class="technologies__tech-title">JavaScript</p>
-                    <i class="fas fa-angle-down"></i>
+                <div class="technologies__tech technologies__tech--css">
+                    <div class="technologies__name">
+                        <p class="technologies__icon--css technologies__icon"><i class="fab fa-css3-alt"></i></p>
+                        <p class="technologies__tech-title">CSS3</p>
+                        <button class="technologies__arrow"><i class="fas fa-angle-down"></i></button>
+
+                    </div>
+                    <div class="technologies__desc">
+                        <p class="technologies__details">Intermediate knowledge including: SASS, Position Relatiwe and
+                            Absolute, Display, Grid, Flexbox, BEM Metodology, RWD Mobile First, Media Queries. </p>
+                    </div>
 
                 </div>
-                <div class="technologies__tech">
-                    <i class="fab fa-github"></i>
-                    <p class="technologies__tech-title">GitHub</p>
-                    <i class="fas fa-angle-down"></i>
+                <div class="technologies__tech technologies__tech--js">
+                    <div class="technologies__name">
+                        <p class="technologies__icon--js technologies__icon"><i class="fab fa-js-square"></i></p>
+                        <p class="technologies__tech-title">JavaScript</p>
+                        <button class="technologies__arrow"><i class="fas fa-angle-down"></i></button>
+
+                    </div>
+                    <div class="technologies__desc ">
+                        <p class="technologies__details">Basic knowlegde including: Variables, Data Types, Functions,
+                            Scope, Hoisting, Event Listener, Loops, Async/Await, AJAX and API. I'm still learning and
+                            practising my skills.</p>
+                    </div>
 
                 </div>
-                <div class="technologies__tech">
-                    <i class="fab fa-react"></i>
-                    <p class="technologies__tech-title">React</p>
-                    <i class="fas fa-angle-down"></i>
+                <div class="technologies__tech technologies__tech--bs">
+                    <div class="technologies__name">
+                        <p class="technologies__icon--bs technologies__icon"><i class="fab fa-bootstrap"></i></p>
+                        <p class="technologies__tech-title">Bootstrap</p>
+                        <button class="technologies__arrow"><i class="fas fa-angle-down"></i></button>
+
+                    </div>
+                    <div class="technologies__desc">
+                        <p class="technologies__details">Basic knowlegde.</p>
+                    </div>
+
+                </div>
+                <div class="technologies__tech technologies__tech--gh">
+                    <div class="technologies__name">
+                        <p class="technologies__icon--gh technologies__icon"><i class="fab fa-github"></i></p>
+                        <p class="technologies__tech-title">GitHub</p>
+                        <button class="technologies__arrow"><i class="fas fa-angle-down"></i></button>
+
+                    </div>
+                    <div class="technologies__desc">
+                        <p class="technologies__details">Basic knowlegde.</p>
+                    </div>
+
+                </div>
+                <div class="technologies__tech technologies__tech--react">
+                    <div class="technologies__name">
+                        <p class="technologies__icon--react technologies__icon"><i class="fab fa-react"></i></p>
+                        <p class="technologies__tech-title">React</p>
+                        <button class="technologies__arrow"><i class="fas fa-angle-down"></i></button>
+
+                    </div>
+                    <div class="technologies__desc">
+                        <p class="technologies__details"></p>
+                    </div>
+
+                </div>
+                <div class="technologies__tech technologies__tech--figma">
+                    <div class="technologies__name">
+                        <p class="technologies__icon"><i class="fa-brands fa-figma"></i></p>
+                        <p class="technologies__tech-title">Figma</p>
+                        <button class="technologies__arrow"><i class="fas fa-angle-down"></i></button>
+
+                    </div>
+                    <div class="technologies__desc">
+                        <p class="technologies__details">Basic knowlegde: knowing of fundamental possibilities of Figma.
+                        </p>
+                    </div>
 
                 </div>
             </div>
         </section>
+        <section class="contact" id="contact">
+            <h2 class="section__title contact__title">Contact</h2>
+            <div class="contact__content wrapper">
+                <div class="contact__info">
+                    <div class="contact__phone">
+                        <p class="contact__name">phone: </p>
+                        <p class="contact__number">+48 691 573 240</p>
+                    </div>
+                    <div class="contact__mail">
+                        <p class="contact__name">e-mail: </p>
+                        <p class="contact__number">kamil.56@wp.pl</p>
+                    </div>
+                </div>
+                <form class="contact__form" action="https://formsubmit.io/send/kamil.56@wp.pl" method="POST">
+                    <!-- <label for="name">name</label>
+                        <input id="name" name="mail" type="mail" class="contact__name" placeholder="Name"> -->
+
+                    <label class="contact__label" for="mail">E-mail</label>
+                    <input class="contact__input" id="mail" name="mail" type="mail" class="contact__name">
+
+                    <label class="contact__label" for="msg">Your message</label>
+                    <textarea class="contact__textarea" id="msg" name="msg" cols="30" rows="10"></textarea>
+
+                    <div class="contact__links-btn">
+                        <button class="contact__button"><input value="submit" type="submit"></button>
+                        <div class="contact__media">
+                            <li><a href="#" class="contact__media-item"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="#" class="contact__media-item"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#" class="contact__media-item"><i class="fa-brands fa-facebook"></i></a></li>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <!-- <div class="space"></div> -->
+            <footer class="footer">
+                <p class="footer__text">copy. All rights reserved.</p>
+            </footer>
+        </section>
     </main>
 
 
-    <div class="space"></div>
 
 
 
