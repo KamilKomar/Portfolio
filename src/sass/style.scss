@@ -1,6 +1,5 @@
 @import './colors';
-@import './large';
-@import './medium';
+
 
 * {
     margin: 0;
@@ -56,6 +55,16 @@ body {
     }
 }
 
+.nav__active {
+    background-color: rgba(0,0,0, .1);
+    backdrop-filter: blur(10px);
+}
+
+.nav__top {
+    backdrop-filter: blur(10px);
+    background: transparent;
+}
+
 //HEADER
 
 .header {
@@ -98,7 +107,6 @@ body {
     position: fixed;
     right: 0;
     height: 100vh;
-    background: #000;
     width: 80%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -116,6 +124,7 @@ body {
         align-items: center;
         height: 100%;
         width: 100%;
+        background-color: $black;
 
         &-item {
             color: $white;
@@ -313,25 +322,25 @@ body {
     &__proj1 {
         grid-column: 1/2;
         grid-row: 1/2;
-        background: linear-gradient(90deg, rgba(135, 208, 242, .9) 0%, rgba(32, 151, 230, .9) 100%), url('../img/Med-clinic-site.png');
+        background: $linearGradientProj1;
     }
 
     &__proj2 {
         grid-column: 1/1;
         grid-row: 2/3;
-        background: linear-gradient(90deg, rgba(171, 148, 223, .9) 0%, rgba(131, 80, 243, .9) 100%), url('../img/GitHub-Profiles.png');
+        background: $linearGradientProj2;
     }
 
     &__proj3 {
         grid-column: 1/1;
         grid-row: 3/4;
-        background: linear-gradient(90deg, rgba(242, 188, 157, .9) 0%, rgba(245, 135, 55, .9) 100%), url('../img/Law-firm.png');
+        background: $linearGradientProj3 ;
     }
 
     &__proj4 {
         grid-column: 1/1;
         grid-row: 4/5;
-        background: linear-gradient(90deg, rgba(130, 241, 135, .9) 0%, rgba(21, 195, 67, .9) 100%), url('../img/WeatherApp.png');
+        background: $linearGradientProj4;
     }
 
     &__info {
@@ -428,19 +437,19 @@ body {
         font-size: 25px;
 
         &--html {
-            color: #E44D26;
+            color: $html;
         }
 
         &--css {
-            color: #2965F1;
+            color: $css;
         }
 
         &--js {
-            color: #DABA31;
+            color: $js;
         }
 
         &--bs {
-            color: #7952B3;
+            color: $bs;
         }
 
         &--gh {
@@ -448,7 +457,7 @@ body {
         }
 
         &--react {
-            color: #00D1F7;
+            color: $react;
         }
     }
 
@@ -506,7 +515,7 @@ body {
     &__phone,
     &__mail {
         padding: 10px 0;
-        text-shadow: 0 0 7px #000;
+        text-shadow: 0 0 7px $black;
 
     }
 
@@ -524,7 +533,7 @@ body {
 
     &__label {
         padding-bottom: 5px;
-        text-shadow: 0 0 7px #000;
+        text-shadow: 0 0 7px $black;
     }
 
     &__input,

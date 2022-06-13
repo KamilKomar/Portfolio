@@ -2,12 +2,11 @@ const navMobileMenuBtn = document.querySelector(".nav__mobile-menu");
 const navMobileCloseBtn = document.querySelector(".nav__mobile-close");
 const navMenuLink = document.querySelectorAll(".nav__menu-item");
 const nav = document.querySelector(".nav");
-const techName = document.querySelectorAll('.technologies__name')
-const technologyDesc = document.querySelector('.technologies__desc')
+const techName = document.querySelectorAll(".technologies__name");
+const technologyDesc = document.querySelector(".technologies__desc");
 
 let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
-
 
 // PARALLAX EFFECT
 timeline
@@ -36,32 +35,22 @@ navMobileCloseBtn.addEventListener("click", () => {
 
 //ACCORDION
 
-techName.forEach( (name) => {
-
-    name.addEventListener('click',(e) => {
-
-        const arrow = name.lastElementChild
-        arrow.classList.toggle('technologies__arrow-rotate')
-        const techDesc = e.target.closest('div')
-        const desc = techDesc.nextElementSibling
-        desc.classList.toggle('technologies__desc-active')
-
-
-
-    })
-
-})
-
-
+techName.forEach((name) => {
+    name.addEventListener("click", (e) => {
+        const arrow = name.lastElementChild;
+        arrow.classList.toggle("technologies__arrow-rotate");
+        const techDesc = e.target.closest("div");
+        const desc = techDesc.nextElementSibling;
+        desc.classList.toggle("technologies__desc-active");
+    });
+});
 
 // NAV SCROLL
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
     const scrolled = window.scrollY;
     if (scrolled > 1) {
-        nav.style.backgroundColor = "rgba(0,0,0, .1)";
-        nav.style.backdropFilter = `blur(${10}px)`;
+        nav.classList.add("nav__active");
     } else {
-        nav.style.backdropFilter = `blur(${0}px)`;
-        nav.style.background = "transparent";
+        nav.classList.add("nav__top");
     }
-})
+});
