@@ -591,6 +591,8 @@ body {
 
 //FOOTER
 .footer {
+    display: flex;
+    justify-content: center;
     color: $white;
     text-align: center;
     padding: 10px 0;

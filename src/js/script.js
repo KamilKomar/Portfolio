@@ -4,6 +4,7 @@ const navMenuLink = document.querySelectorAll(".nav__menu-item");
 const nav = document.querySelector(".nav");
 const techName = document.querySelectorAll(".technologies__name");
 const technologyDesc = document.querySelector(".technologies__desc");
+const footerYear = document.querySelector(".footer__actual-year");
 
 let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
@@ -54,3 +55,10 @@ window.addEventListener("scroll", () => {
         nav.classList.add("nav__top");
     }
 });
+
+//ACTUAL YEAR
+const actualYear = () => {
+    const year = new Date().getFullYear();
+    footerYear.textContent = `${year}`;
+};
+actualYear();
