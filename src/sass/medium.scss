@@ -103,34 +103,4 @@
     .project {
         margin: 0;
     }
-
-    .contact {
-        &__content {
-            width: 100%;
-            // display: flex;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 1fr;
-            gap: 50px;
-        }
-
-        &__info {
-            flex-direction: column;
-            justify-content: space-evenly;
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }
-
-        &__form {
-            grid-column: 2/4;
-            grid-row: 1/2;
-            padding: 70px 0;
-        }
-
-        &__media {
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }
-    }
-
 }
